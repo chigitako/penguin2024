@@ -6,6 +6,7 @@ export default function Version() {
     <div className={style.cyousei}>
       <p>本アプリは出欠管理アプリ(欠席特化型)となっております。</p>
       <p>授業回数を入力すると自動的に1/3の欠席回数が残りとして表示されます。</p>
+      <p>もし授業を欠席したら欠席ボタンを押してください。</p>
       <p>残りの日数が減るにつれてアイコンが</p>
       <div className={style.yoko}>
         <Image
@@ -34,7 +35,10 @@ export default function Version() {
         <p>ラクタン...?</p>
       </div>
       <p>と変化します。</p>
-      <p>決してギリギリまで休んでいいわけではないのでご注意を！</p>
+      <p>リセットしたいときはResetボタンを押してください。</p>
+      <p>
+        決してギリギリまで休んでいいわけではないので授業には真面目に参加しましょう！
+      </p>
     </div>
   );
 }
