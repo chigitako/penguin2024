@@ -1,14 +1,13 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
-import styles from '@/app/ui/home.module.css';
-import Image from 'next/image';
-import { Test } from './dashboard/invoices/test';
 import Aisatsu from './dashboard/invoices/aisatsu';
+import style from './util.module.css';
 
 export default function Page() {
   return (
     <div>
+      <div className={style.yoko}>
+        <p className={style.styleTitle}> 出欠管理 </p>
+        <a href="/version"> 仕様説明</a>
+      </div>
       <Aisatsu />
       <Aisatsu />
       <Aisatsu />

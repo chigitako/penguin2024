@@ -1,0 +1,15 @@
+.styleTitle {
+  width: fit-content;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.yoko {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.cyousei {
+  margin: 50px;
+}
