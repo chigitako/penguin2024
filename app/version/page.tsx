@@ -31,9 +31,9 @@ export default function Version() {
           className="hidden md:block"
           alt="Screenshots of the dashboard project showing desktop version"
         />{' '}
-        <p>落単...?</p>
-        <p>と変化します。</p>
+        <p>ラクタン...?</p>
       </div>
+      <p>と変化します。</p>
       <p>決してギリギリまで休んでいいわけではないのでご注意を！</p>
     </div>
   );
