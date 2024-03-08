@@ -1,3 +1,7 @@
 export default function Page() {
-    return <p>Customers Page</p>;
-  }
+  return (
+    <div>
+      return <p>Customers Page</p>;
+    </div>
+  );
+}

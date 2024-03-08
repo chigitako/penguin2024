@@ -13,15 +13,13 @@ const AddLesson = () => {
   }
 
   return (
-    <>
-      <form>
-        授業名:
-        <input type="text" />
-        授業回数:
-        <input type="number" onChange={(e) => setFirstCount(e.target.value)} />
-        回<button type="submit">add</button>
-      </form>
-    </>
+    <div>
+      授業名:
+      <input type="text" />
+      授業回数:
+      <input type="number" onChange={(e) => setFirstCount(e.target.value)} />回
+      <button type="submit">add</button>
+    </div>
   );
 };
 

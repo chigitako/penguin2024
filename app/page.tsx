@@ -17,6 +17,13 @@ export default function Page() {
       <Aisatsu />
       <Aisatsu />
       <Aisatsu />
+      <Aisatsu />
+      <Aisatsu />
+      <Aisatsu />
+      <Aisatsu />
+      <Aisatsu />
+      <Aisatsu />
+      <Aisatsu />
     </div>
   );
 }

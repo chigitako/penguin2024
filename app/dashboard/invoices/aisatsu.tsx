@@ -1,23 +1,15 @@
 'use client';
+import style from './aisatsu.module.css';
 import { useState } from 'react';
+import Changeface from './changeface';
 
 const Aisatsu = () => {
-  const [inputText, setInputText] = useState<string>('');
-  const [showText, setShowText] = useState<string>('');
   const [count, setCount] = useState<number>(0);
   const [firstcount, setFirstCount] = useState<number>(0);
+  const restDays = Math.floor((firstcount * 1) / 3) - count;
 
-  function fanc(event: any) {
-    console.log(event);
-    setInputText(event.target.value);
-  }
-  function showtextFunc() {
-    let test = inputText;
-    setShowText(inputText);
-    console.log(test);
-  }
   function kessekiCount() {
-    if (Math.round(firstcount / 3) < count + 1) {
+    if (Math.floor(firstcount / 3) < count + 1) {
       return;
     }
     setCount((prev) => prev + 1);
@@ -25,12 +17,15 @@ const Aisatsu = () => {
 
   return (
     <>
-      <div>{showText}</div>
-      授業名
-      <input type="text" />： 授業回数
-      <input type="number" onChange={(e) => setFirstCount(e.target.value)} />回
-      <button onClick={kessekiCount}>欠席</button>： 欠席回数{count}： 残り:
-      {Math.round((firstcount * 1) / 3) - count}
+      <div className={style.yoko}>
+        授業名 <input type="text" />： 授業回数
+        <input type="number" onChange={(e) => setFirstCount(e.target.value)} />
+        回
+        <button className={style.aisatsu} onClick={kessekiCount}>
+          欠席
+        </button>
+        ： 欠席回数{count}： 残り: {restDays} <Changeface restDays={restDays} />
+      </div>
     </>
   );
 };

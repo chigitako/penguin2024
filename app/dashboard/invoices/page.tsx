@@ -1,12 +1,12 @@
-"use client"
-import Aisatsu from '@/app/dashboard/invoices/aisatsu';
-import Counter from '@/app/dashboard/invoices/counter';
+'use client';
+import AddLesson from './addLesson';
+import LessonList from './lessonList';
 
 export default function Page() {
-    return (
+  return (
     <div>
-        <p>Invoices Page</p>
-        <Aisatsu/>
+      <AddLesson />
+      <LessonList />
     </div>
-    );
-  }
+  );
+}
