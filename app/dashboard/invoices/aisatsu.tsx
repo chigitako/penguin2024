@@ -42,7 +42,9 @@ const Aisatsu = () => {
           欠席
         </button>
         ： 欠席回数{count}： 残り: {restDays} <Changeface restDays={restDays} />
-        <button onClick={resetCount}>Reset</button>
+        <button className={style.aisatsu} onClick={resetCount}>
+          Reset
+        </button>
       </div>
     </>
   );
